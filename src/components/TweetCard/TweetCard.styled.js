@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Card = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const Card = styled.div`
   height: 460px;
 
   padding-bottom: 36px;
-  margin-bottom: 24px;
+  margin: 15px auto;
   display: flex;
   flex-direction: column;
   background: linear-gradient(
@@ -31,11 +31,11 @@ export const Logo = styled.div`
   left: 20px;
   height: 22px;
   width: 76px;
-  background-image: url('../../images/Vector.svg');
+  background-image: url("../../images/Logo.svg");
 `;
 
 export const BgCard = styled.div`
-  background-image: url('../../images/bgPicture.png');
+  background-image: url("images/bgCard.png");
   height: 168px;
   width: 308px;
   margin: 0 auto;
@@ -45,16 +45,15 @@ export const BgCard = styled.div`
 export const MainCard = styled.div`
   width: 100%;
   padding-top: 70px;
-  background-image: url('../../images/line.png');
+  background-image: url("images/line.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-
   align-items: center;
 `;
 
 export const TweetsBlock = styled.div`
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -72,7 +71,7 @@ export const TweetsTittle = styled.div`
 export const FollowersTittle = styled.div`
   display: flex;
   gap: 7px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -96,7 +95,7 @@ export const Circle = styled.div`
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-image: url('../../images/Ellipse.png');
+  background-image: url("images/Circle.png");
 `;
 export const AvatarPhoto = styled.div`
   display: flex;

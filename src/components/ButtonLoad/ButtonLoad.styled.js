@@ -1,10 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledButton = styled.button`
-   margin: 15px auto;
+  margin: 0 auto;
+  margin-bottom: 15px;
   padding: 8px 16px;
   border-radius: 10px;
-  background-color: #3f51b5;
+  background: linear-gradient(
+    114.99deg,
+    #471ca9 -0.99%,
+    #5736a3 54.28%,
+    #4b2a99 78.99%
+  );
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: center;
   display: block;

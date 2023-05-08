@@ -1,8 +1,8 @@
-import { useDispatch, useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
-import { selectUserFollow } from '../../redux/selectors';
-import { addFollowing, removeFollowing } from '../../redux/followingSlice';
-import FollowButton from '../FollowButton/FollowButton';
+import { useDispatch, useSelector } from "react-redux";
+import PropTypes from "prop-types";
+import { selectUserFollow } from "../../redux/selectors";
+import { addFollowing, removeFollowing } from "../../redux/followingSlice";
+import FollowButton from "../FollowButton/FollowButton";
 import {
   Card,
   HeaderCard,
@@ -16,13 +16,13 @@ import {
   FollowersTittle,
   AvatarPhoto,
   PersonPhoto,
-} from './TweetCard.styled';
+} from "./TweetCard.styled";
 
 const TweetCard = ({ user }) => {
   const dispatch = useDispatch();
   const follow = useSelector(selectUserFollow);
 
-  const isFollowing = Boolean(follow.find(id => id === user.id));
+  const isFollowing = Boolean(follow.find((id) => id === user.id));
 
   function handleClick() {
     if (isFollowing) {
@@ -35,7 +35,7 @@ const TweetCard = ({ user }) => {
   const followersCount = isFollowing
     ? Number(user.followers) + 1
     : Number(user.followers);
-  const formatCount = followersCount.toLocaleString('en-US');
+  const formatCount = followersCount.toLocaleString("en-US");
 
   return (
     <Card>

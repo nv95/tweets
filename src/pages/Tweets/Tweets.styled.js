@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CardContainer = styled.div`
   display: flex;
@@ -6,12 +6,8 @@ export const CardContainer = styled.div`
   gap: 24px;
 `;
 export const CardWrap = styled.ul`
-  margin: 0 auto;
+  padding-left: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
-`;
-
-export const BtnBack = styled.button`
-  width: 80px;
 `;

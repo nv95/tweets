@@ -1,12 +1,12 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { FollowBtn, BtnText } from './FollowButton.styled';
+import { FollowBtn, BtnText } from "./FollowButton.styled";
 
 function FollowButton({ onClick, isFollowing }) {
   return (
     <>
       <FollowBtn type="button" onClick={onClick} isFollowing={isFollowing}>
-        <BtnText>{!isFollowing ? 'Follow' : 'Following'}</BtnText>
+        <BtnText>{!isFollowing ? "Follow" : "Following"}</BtnText>
       </FollowBtn>
     </>
   );
